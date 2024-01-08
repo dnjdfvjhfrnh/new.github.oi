@@ -1,0 +1,296 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+body{
+    min-width: 1410px;
+    max-width: 1800px;
+}
+nav{
+    width: 100%;
+    min-width: 1550px;
+}
+.daohang{
+    height: 100px;
+    /* border: red solid; */
+}
+.daohang .logo{
+    width: 253px;
+    position: relative;
+    /* border: red solid; */
+}
+@font-face {
+    font-family: "ziti";
+    src: url(../font/AlimamaDaoLiTi.ttf);
+}
+.daohang .logo p{
+    font-family: "ziti";
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 35px;
+}
+.daohang .logo .p1{
+    position: absolute;
+    top: 16px;
+    left: 102px;
+}
+.daohang .logo .p2{
+    position: absolute;
+    top: 56px;
+    left: 111px;
+}
+
+.sousuo input{
+    width: 93%;
+    height: 48px;
+    border-radius: 20px;
+    margin: 50px 0 0 10px;
+    font-size: 20px;
+    background: url(../img/搜索.png) no-repeat 200px;
+    background-size: 48px;
+    
+}
+.sousuo input:hover{
+    border:black 2px solid;
+}
+.sousuo{
+    margin-left: 20px;
+}
+
+.logo,.ul1,.sousuo{
+    float: left;
+}
+.ul1{
+    height: 100px;
+    margin-left: 20px;
+}
+.ul2{
+    float: right;
+    height: 100px;
+    margin-right: 3%;
+}
+ul li a{
+    color: rgb(25, 26, 26);
+    background-color: rgb(227, 229, 231);
+    border-radius: 20px;
+    border-bottom: 5px solid green;
+}
+.ul1 li a{
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+} 
+.ul2_2 a{
+    display: inline-block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+ul li a:hover{
+    color: rgb(19, 168, 168);
+    border-bottom: 5px solid rgb(241, 155, 16);
+    transition: all 0.4s;
+
+}
+.ul1 li{
+    display: inline;
+    font-size: 30px;
+    line-height: 140px;
+}
+
+.ul1 .leftbianjv{
+    margin-left: 30px;
+}
+
+.ul2 li{
+    display: inline;
+    font-size: 35px;
+    line-height: 110px;
+}
+
+.ul2 :nth-child(2){
+    margin-left: 20px;
+}
+.denglu a{
+    display: inline-block;
+    text-align: center;
+    width: 120px;
+    height: 80px;
+    line-height: 80px;
+    background-color: rgb(227, 229, 231);
+    border-radius: 20px;
+    animation: dengludonghua 0.5s;
+}
+@keyframes dengludonghua {
+    from{translate: 10px;}
+    50%{translate: 0px;}
+    to{translate: -10px;}
+}
+
+
+.tonggao{
+    width: 475px;
+    height: 30px;
+    border-radius: 10px;
+    border: rgb(47, 46, 46) solid  2px;
+    margin: 10px auto 0 auto;
+    background: url(../img/通告.png) no-repeat;
+    background-size: 30px;
+    position: relative;
+}
+.tonggao span{
+    position: absolute;
+    left: 40px;
+    line-height: 30px;
+}
+
+
+
+.redian{
+    margin-top: 50px;
+    width: 500px;
+    /* border: red solid; */
+    animation: left_donghua1 0.6s;
+}
+@keyframes left_donghua1 {
+    from{translate: 500px;}
+    to{translate: 0px;}
+}
+.big_box{
+    margin-top: 20px;
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    /* border: red solid; */
+}
+.big_box_1{
+    width: 200px;
+    margin-left: 20px;
+}
+.big_box_1 img{
+    width: 200px;
+    height: 100px;
+    float: left;
+}
+.big_box_2{
+    width: 300px;
+    height: 100px;
+}
+.big_box_2 p{
+    width: 500px;
+    font-size: 20px;
+    line-height: 100px;
+    color: black;
+    font-weight: bold;
+    /* border: red solid; */
+}
+.big_box_2 p a:hover{
+    color: rgb(50, 72, 220);
+    text-decoration: none;
+}
+.big_box:hover{
+    background-color: rgb(203, 204, 205);
+    transform: scale(1.06);
+    transition: all 0.5s;
+}
+
+
+.redian h2{
+    width: 175px;
+    margin-left: 20px;
+    font-size: 40px;
+    border-right: gray solid 5px;
+}
+
+
+
+.bandan{
+    position: absolute;
+    left: 750px;
+    top: 10px;
+}
+.bandan ol li{
+    /* border: red solid; */
+    width: 525px;
+    line-height: 50px;
+    font-size: 35px;
+    font-family: "ziti";
+    font-style: italic;
+    position: relative;
+}
+
+.bandan ol h2{
+    font-size: 35px;
+    height: 50px;
+    border: none;
+    background: url(../img/分类-热门.png) no-repeat 118px;
+    background-size: 50px;
+}
+.color_1{
+    color: red;
+}
+.bandan ol li a{
+    color: rgb(46, 47, 48);
+}
+.bandan ol li a span{
+    color: rgb(233, 10, 25);
+    font-size: 20px;
+    position: absolute;
+    top: -5px;
+}
+.bandan ol li a:hover{
+    color: rgb(15, 131, 233);
+}
+
+.zhong{
+    /* border: red solid; */
+    width: 100%;
+    position: relative;
+}
+
+.right_nav{
+    width: 65px;
+    height: 290px;
+    /* border: red solid; */
+    float: right;
+    margin: -12% 0px 0px 0px;
+    animation: leftdaohan 0.5s linear 0.3s,right_donghua 1s ease 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes leftdaohan {
+    for{translate: 0;}
+    to{translate: -70%;}
+    }
+.right_nav div{
+    position: relative;
+    height: 60px;
+    margin-bottom: 40px;
+}
+@keyframes right_donghua {
+    from{transform: rotateY(0deg);}
+    50%{transform: rotateY(180deg);}
+    to{transform: rotateY(0deg);}
+}
+.right_nav div span{
+    font-size: 28px;
+    font-weight: 500;
+    position: absolute;
+    top: 55px;
+    left: 2px;
+}
+
+
+.right_nav-1{
+    background: url(../img/收藏.png)  no-repeat 5px;
+    background-size: 50px;
+}
+.right_nav-2{
+    background: url(../img/分享.png)  no-repeat 5px;
+    background-size: 50px;
+}
+.right_nav-3{
+    background: url(../img/更多.png)  no-repeat 5px;
+    background-size: 50px;
+}
+
